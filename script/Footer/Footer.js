@@ -1,12 +1,12 @@
 class Footer {
     constructor() {
         this.footer = document.createElement("footer");
-        this.footer.className = "bg-blue-800 text-white py-6";
+        this.footer.className = "bg-blue-800 text-white";
         this.footer.id = "footer"
 
         // First row with main info
         const firstRow = document.createElement("div");
-        firstRow.className = "container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-4";
+        firstRow.className = "container p-5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-4";
 
         // Column 1
         const helpInfo = document.createElement("div");

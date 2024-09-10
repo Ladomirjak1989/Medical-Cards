@@ -72,7 +72,7 @@ class Select {
                 }
             },
             priority: { //Конфігурація для вибору пріоритету візиту (звичайний, пріоритетний, терміновий)
-                className: "border border-gray-300 p-2 font-normal rounded focus:outline-none focus:ring-2 focus:ring-blue-500 w-full",
+                className: "border border-gray-300 p-2 rounded font-normal focus:outline-none focus:ring-2 focus:ring-blue-500 w-full",
                 options: ["Choose priority", "Ordinary", "Priority", "Urgent"],
                 value: ["", "ordinary", "priority", "urgent"],
                 name: "priority",

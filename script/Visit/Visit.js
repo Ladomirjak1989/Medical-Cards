@@ -11,14 +11,12 @@ class Visit {  //Це конструктор класу Visit, який прий
 
 
     }
-    render(id, card = {}) {    //Метод для рендерингу полів форми на основі конфігурації для конкретного візиту.
-        console.log(card)
+    render(id, card = {}) {    //Метод для рендерингу полів форми на основі конфігурації для конкретного візиту
         const { inputs, textares, selects } = this.config[id]  //Отримує з конфігурації поля inputs, textares (текстові області) і selects (випадаючі списки) для певного типу візиту
-       
+
         if (inputs) {
             inputs.forEach(element => {    //Для кожного поля вводу створює елемент Input за допомогою методу render з відповідного класу Input. Додаються стилі для полів вводу за допомогою Tailwind CSS і елемент додається до батьківського контейнера this.parent.
-                const input = new Input().render(element, card[element]) 
-                //  card[element]
+                const input = new Input().render(element, card[element])
                 input.className += " w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 this.parent.append(input)
             });

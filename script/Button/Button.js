@@ -1,6 +1,5 @@
 import Modal from "../Modal/Modal.js";
 import api from "../API/API.js"
-// import cardList from "../CardList/CardList.js";
 
 class Button {
     constructor() {
@@ -86,7 +85,7 @@ class Button {
                     }
                 },
                 login: {
-                    className: "bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500",
+                    className: "bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500",
                     type: "button",
                     text: "LOGIN",
                     onClick: () => {
@@ -101,7 +100,6 @@ class Button {
                     text: "Create Card",
                     onClick: () => {
                         const modal = new Modal();
-
                         const root = document.getElementById("root")
                         root.append(modal.render("createCard")) // Викликає модальне вікно для створення нової картки
 
@@ -127,7 +125,7 @@ class Button {
                 },
                 demo: {
                     className: "bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500",
-                    text: "demouser@gmail.com",
+                    text: "demousercard@gmail.com",
                     type: "button",
                     onClick: (e) => {
                         const parent = e.target.closest("form")

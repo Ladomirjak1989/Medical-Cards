@@ -13,11 +13,11 @@ class Form {
     constructor() {
         this.form = document.createElement("form"); // Створюємо елемент <form>, який буде контейнером для полів вводу та кнопок.
         this.wrapper = document.createElement("div"); // Створюємо обгортку для додавання кнопок в форму.
-        this.form.className = "border p-4 rounded-lg shadow-md bg-white max-w-xs mx-auto space-y-4 max-h-96 overflow-y-auto"; // Примусовий скрол додано
+        this.form.className = "border p-6 rounded-lg shadow-md bg-white mx-auto space-y-6"; // Примусовий скрол додано
 
         this.config = {
             login: {
-                className: "space-y-4",
+                className: "border p-6 rounded-lg shadow-md bg-white mx-auto space-y-6",
                 inputs: ["email", "password"],
                 buttons: ["submitLogin", "cancel", "demo"],
                 onSubmit: async (e) => {
@@ -215,7 +215,7 @@ class Form {
 
 
 
-        this.wrapper.className = "wrapperBtn flex justify-between items-center mt-4"; // Встановлює клас для контейнера з кнопками
+        this.wrapper.className = "flex justify-between items-center mt-4 space-x-4"; // Встановлює клас для контейнера з кнопками
 
         buttons.forEach(btn => {
             const button = new Button().render(btn); // Рендерить кнопки

@@ -48,7 +48,7 @@ class Modal {
         this.modal.id = modalId;
 
         const modalContent = document.createElement("div"); //Створюється елемент, який буде вмістом модального вікна (білий фон, відступи, закруглені кути).
-        modalContent.className = " border p-4 rounded-lg shadow-md bg-white max-w-xs mx-auto space-y-4 max-h-[85%] overflow-y-auto";
+        modalContent.className = " border p-4 rounded-lg shadow-md bg-white mx-auto space-y-4 max-h-[85%] overflow-y-auto";
 
         const closeButton = new Button().render("close");//Створює кнопку для закриття модального вікна.
 
@@ -61,7 +61,7 @@ class Modal {
 
             // Create a div container for the buttons with flex and justify-between
             const buttonSure = document.createElement("div");
-            buttonSure.className = "flex justify-between mt-4";
+            buttonSure.className = "flex justify-between mt-2";
 
             buttons.forEach(element => {  //Для кожної кнопки з конфігурації викликається метод render з передачею cardId (для видалення картки).
                 const btn = new Button().render(element, cardId)
@@ -108,36 +108,6 @@ class Modal {
 
         }
         const form = new Form().render(id, cardId)
-
-
-
-        // const emailInput = document.createElement("input");
-        // emailInput.type = "email";
-        // emailInput.id = "emailInput";
-        // emailInput.placeholder = "Email";
-        // emailInput.className = "border p-2 mb-4 w-full rounded";
-
-        // const passwordInput = document.createElement("input");
-        // passwordInput.type = "password";
-        // passwordInput.id = "passwordInput";
-        // passwordInput.placeholder = "Password";
-        // passwordInput.className = "border p-2 mb-4 w-full rounded";
-
-        // const demoButton = new Button().render("demo");
-        // const submitLoginButton = new Button().render("submitLogin");
-        // const cancelButton = new Button().render("cancel");
-
-        // submitLoginButton.addEventListener("click", () => {
-        //     const email = emailInput.value;
-        //     const password = passwordInput.value;
-
-        //     if (email === "demouser@gmail.com" && password === "password") {
-        //         alert("Login successful");
-        //         this.close();
-        //     } else {
-        //         alert("Invalid email or password");
-        //     }
-        // });
 
         modalContent.append(closeButton, title, form);
         this.modal.append(modalContent); //Додається вміст модального вікна (контейнер з усіма елементами) до самого модального вікна.

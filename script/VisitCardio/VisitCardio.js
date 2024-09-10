@@ -7,7 +7,6 @@ class VisitCardio extends Visit {    //Це клас-нащадок, який у
     }
     renderShowMore(card) {    //Це метод для відображення додаткової інформації про візит до кардіолога (кардіологічний візит)
         const div = document.createElement("div")   //Створює HTML елемент div, який слугуватиме контейнером для виводу додаткової інформації про візит
-        // div.className = "p-4 bg-gray-100 rounded-lg shadow space-y-2"
         div.insertAdjacentHTML("beforeend", `
         <p><span class="font-semibold text-gray-600">BMI:</span> <span>${card.weigth}</span></p>
         <p><span class="font-semibold text-gray-600">NBP:</span> <span>${card.nbp}</span></p>
