@@ -216,6 +216,7 @@ class Form {
 
 
         this.wrapper.className = "flex justify-between items-center mt-4 space-x-4"; // Встановлює клас для контейнера з кнопками
+        this.wrapper.id = "wrapperBtn"
 
         buttons.forEach(btn => {
             const button = new Button().render(btn); // Рендерить кнопки

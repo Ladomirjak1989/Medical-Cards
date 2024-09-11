@@ -26,7 +26,7 @@ class Select {
                     }).render("createCard")
 
                     const form = e.target.closest("form") //Знаходить найближчу форму, до якої належить випадаючий список.
-                    const btnWrapper = form.querySelector(".wrapperBtn")
+                    const btnWrapper = form.querySelector("#wrapperBtn")
 
                     const div = document.querySelector("#inputWrapper")
                     if (div) {
