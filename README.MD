@@ -1,5 +1,5 @@
- Token: 8a50cea3-4891-47c5-b3e1-da2758bea18d
- Your token is: f90c4614-31c6-4179-aec2-ead2aeecb34a
+Link to LifeSite
+## https://ladomirjak1989.github.io/Medical-Cards/
 Завдання
 Вам потрібно створити сторінку, де Секретарка зможе створювати картки, що описують заплановані візити до лікарів.
 На сторінці повинні бути:

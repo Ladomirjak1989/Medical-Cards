@@ -16,7 +16,7 @@ const root = document.querySelector("#root");   //Цей рядок знаход
 
     root.append(searchBar.render("search"));   //Рендерить пошукову панель з модуля searchBar і додає її до кореневого елемента сторінки
 
-    const token = localStorage.getItem("token");  //Перевіряє наявність токена авторизації в локальному сховищі.
+    const token = sessionStorage.getItem("token");  //Перевіряє наявність токена авторизації в локальному сховищі.
     const headerElement = document.querySelector("#header");
 
     if (!token) {

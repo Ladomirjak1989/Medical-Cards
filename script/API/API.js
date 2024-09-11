@@ -1,7 +1,7 @@
 class API {
     constructor() {
         this.baseURL = "https://ajax.test-danit.com/api/v2"
-        this.token = localStorage.getItem("token") || null
+        this.token = sessionStorage.getItem("token") || null
     }
     async login(body) {
         try {
@@ -19,7 +19,7 @@ class API {
             }
          
             this.token = data
-            localStorage.setItem("token", this.token)
+            sessionStorage.setItem("token", this.token)
             return this.token
         }
         catch (error) {
